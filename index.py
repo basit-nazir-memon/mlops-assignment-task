@@ -52,5 +52,7 @@ def predict_house_price():
             'error': str(e)
         }), 400
 
-if __name__ == "__main__":  
-    app.run(debug=True, port=5000)
+if __name__ == '__main__':
+    # Bind to 0.0.0.0 and use the port from the environment variable
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
