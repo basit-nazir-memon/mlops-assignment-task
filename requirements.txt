@@ -1,0 +1,8 @@
+Flask 
+scikit-learn
+numpy
+flask_cors
+matplotlib
+seaborn
+pandas
+pytest
